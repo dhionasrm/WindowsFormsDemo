@@ -17,4 +17,10 @@
         Const COPYRIGHT As String = "Calculadora Natural (powered by Macoratti)"
         lblAviso.Text = COPYRIGHT
     End Sub
+
+    Private Sub txtValor1_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtValor1.KeyPress
+        If Not Char.IsNumber(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
 End Class

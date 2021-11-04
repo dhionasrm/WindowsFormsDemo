@@ -137,7 +137,6 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(601, 304)
-        Me.ControlBox = False
         Me.Controls.Add(Me.lblAviso)
         Me.Controls.Add(Me.grpbCalculadora)
         Me.Name = "Form1"
