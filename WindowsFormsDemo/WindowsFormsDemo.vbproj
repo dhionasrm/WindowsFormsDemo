@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>WindowsFormsDemo</RootNamespace>
-    <StartupObject>WindowsFormsDemo.Form1</StartupObject>
+    <StartupObject>WindowsFormsDemo.LoginForm1</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <AssemblyName>Calculadora_Natural</AssemblyName>
