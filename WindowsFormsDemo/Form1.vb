@@ -1,12 +1,13 @@
 ﻿Public Class Form1
-
+    Dim calc As Calculos
     Private Sub btnSomar_Click(sender As Object, e As EventArgs) Handles btnSomar.Click
         Try
             Dim valor1 As Integer = 0
             Dim valor2 As Integer = 0
             valor1 = CInt(txtValor1.Text)
             valor2 = CInt(txtValor2.Text)
-            txtResultado.Text = macoratti.Soma(valor1, valor2)
+            calc = New Calculos
+            txtResultado.Text = calc.Somar(valor1, valor2)
         Catch ex As Exception
             MsgBox("Ocorreu um erro: " & ex.Message)
         End Try
@@ -30,7 +31,8 @@
         Try
             valor1 = CInt(txtSub1.Text)
             valor2 = CInt(txtSub2.Text)
-            txtSubResultado.Text = macoratti.Subtracao(valor1, valor2)
+            calc = New Calculos
+            txtSubResultado.Text = calc.Somar(valor1, valor2)
         Catch ex As Exception
             MsgBox("Ocorreu um erro: " & ex.Message)
         End Try
@@ -41,7 +43,8 @@
         Try
             valor1 = CInt(txtMult1.Text)
             valor2 = CInt(txtMult2.Text)
-            txtMultResultado.Text = macoratti.Multiplicacao(valor1, valor2)
+            calc = New Calculos
+            txtMultResultado.Text = calc.Multiplicar(valor1, valor2)
         Catch ex As Exception
             MsgBox("Ocorreu um erro: " & ex.Message)
         End Try
@@ -53,7 +56,8 @@
         Try
             valor1 = CSng(txtDiv1.Text)
             valor2 = CSng(txtDiv2.Text)
-            txtDivResultado.Text = macoratti.Divisao(valor1, valor2)
+            calc = New Calculos
+            txtDivResultado.Text = calc.Dividir(valor1, valor2)
         Catch ex As Exception
             MsgBox("Ocorreu um erro: " & ex.Message)
         End Try
