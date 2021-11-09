@@ -47,10 +47,15 @@ Partial Class Form1
         Me.btnDividir = New System.Windows.Forms.Button()
         Me.txtDiv2 = New System.Windows.Forms.TextBox()
         Me.txtDiv1 = New System.Windows.Forms.TextBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.txtRaizResultado = New System.Windows.Forms.TextBox()
+        Me.btnRaiz = New System.Windows.Forms.Button()
+        Me.txtRaizQuadrada = New System.Windows.Forms.TextBox()
         Me.grpbCalculadora.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'grpbCalculadora
@@ -113,7 +118,7 @@ Partial Class Form1
         'lblAviso
         '
         Me.lblAviso.AutoSize = True
-        Me.lblAviso.Location = New System.Drawing.Point(13, 295)
+        Me.lblAviso.Location = New System.Drawing.Point(13, 376)
         Me.lblAviso.Name = "lblAviso"
         Me.lblAviso.Size = New System.Drawing.Size(41, 15)
         Me.lblAviso.TabIndex = 1
@@ -290,13 +295,52 @@ Partial Class Form1
         Me.txtDiv1.Size = New System.Drawing.Size(100, 23)
         Me.txtDiv1.TabIndex = 1
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GroupBox4.Controls.Add(Me.txtRaizResultado)
+        Me.GroupBox4.Controls.Add(Me.btnRaiz)
+        Me.GroupBox4.Controls.Add(Me.txtRaizQuadrada)
+        Me.GroupBox4.Location = New System.Drawing.Point(13, 288)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(511, 63)
+        Me.GroupBox4.TabIndex = 0
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Raiz Quadrada"
+        '
+        'txtRaizResultado
+        '
+        Me.txtRaizResultado.Enabled = False
+        Me.txtRaizResultado.Location = New System.Drawing.Point(386, 22)
+        Me.txtRaizResultado.Name = "txtRaizResultado"
+        Me.txtRaizResultado.Size = New System.Drawing.Size(100, 23)
+        Me.txtRaizResultado.TabIndex = 5
+        '
+        'btnRaiz
+        '
+        Me.btnRaiz.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnRaiz.Location = New System.Drawing.Point(288, 22)
+        Me.btnRaiz.Name = "btnRaiz"
+        Me.btnRaiz.Size = New System.Drawing.Size(75, 23)
+        Me.btnRaiz.TabIndex = 4
+        Me.btnRaiz.Text = "="
+        Me.btnRaiz.UseVisualStyleBackColor = True
+        '
+        'txtRaizQuadrada
+        '
+        Me.txtRaizQuadrada.Location = New System.Drawing.Point(166, 22)
+        Me.txtRaizQuadrada.Name = "txtRaizQuadrada"
+        Me.txtRaizQuadrada.Size = New System.Drawing.Size(100, 23)
+        Me.txtRaizQuadrada.TabIndex = 1
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(541, 320)
+        Me.ClientSize = New System.Drawing.Size(541, 400)
         Me.Controls.Add(Me.lblAviso)
+        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -312,6 +356,8 @@ Partial Class Form1
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -342,4 +388,8 @@ Partial Class Form1
     Friend WithEvents btnDividir As Button
     Friend WithEvents txtDiv2 As TextBox
     Friend WithEvents txtDiv1 As TextBox
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents txtRaizResultado As TextBox
+    Friend WithEvents btnRaiz As Button
+    Friend WithEvents txtRaizQuadrada As TextBox
 End Class

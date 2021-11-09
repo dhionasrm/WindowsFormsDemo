@@ -1,4 +1,5 @@
 ﻿Public Class Calculos
+    Implements IOperacoes
 
     Private _valor1 As Integer
     Private _valor2 As Integer
@@ -34,29 +35,31 @@
         End Set
     End Property
 
-    Public Function Somar(ByVal v1 As Integer, ByVal v2 As Integer) As Integer
+    Public Function Somar(ByVal v1 As Integer, ByVal v2 As Integer) As Integer Implements IOperacoes.somar
         Dim resultado As Integer
         resultado = v1 + v2
         Return resultado
     End Function
-    Public Function Subtrair(ByVal v1 As Integer, ByVal v2 As Integer) As Integer
+    Public Function Subtrair(ByVal v1 As Integer, ByVal v2 As Integer) As Integer Implements IOperacoes.subtrair
         If v1 >= v2 Then
             Return v1 - v2
         Else
             Return v2 - v1
         End If
     End Function
-    Public Function Multiplicar(ByVal v1 As Integer, ByVal v2 As Integer) As Integer
+    Public Function Multiplicar(ByVal v1 As Integer, ByVal v2 As Integer) As Integer Implements IOperacoes.multiplicar
         Dim resultado As Integer
         resultado = v1 * v2
         Return resultado
     End Function
-    Public Function Dividir(ByVal v1 As Single, ByVal v2 As Single) As Single
+    Public Function Dividir(ByVal v1 As Single, ByVal v2 As Single) As Single Implements IOperacoes.dividir
         Dim resultado As Single
         resultado = v1 / v2
         Return resultado
     End Function
-
+    Public Shared Function RaizQuadrada(ByVal v1 As Integer) As Integer
+        Return Math.Sqrt(v1)
+    End Function
 
 
 End Class
